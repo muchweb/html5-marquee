@@ -1,8 +1,6 @@
 # HTML5 MARQUEE
 
-<p align="center">
-![HTML5 marquee logo](./logo.png)
-</p>
+<p align="center"><img alt="HTML5 marquee logo" src="./logo.png" /></p>
 
 >Are you missing good-old feel to your pages? Missing something form the past?
 
