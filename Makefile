@@ -1,11 +1,7 @@
-LIBS=css/marquee.css
-SRCS=less/marquee.less
+all: bower_components
 
-all: $(LIBS)
+bower_components: ./node_modules/.bin/bower
+	./node_modules/.bin/bower install html5-marquee
 
-$(LIBS): $(SRCS) ./node_modules/.bin/lessc
-	mkdir -p css
-	./node_modules/.bin/lessc less/marquee.less css/marquee.css
-
-./node_modules/.bin/lessc:
-	npm install
+./node_modules/.bin/bower:
+	npm install bower
