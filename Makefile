@@ -1,14 +1,11 @@
-LIBS=lib/cli.js lib/cli.js.map
-SRCS=src/cli.coffee
+LIBS=css/marquee.css
+SRCS=less/marquee.less
 
-all: lib/cli
+all: $(LIBS)
 
-lib/cli: $(LIBS)
-	echo '#!/usr/bin/env node' | cat - lib/cli.js > lib/cli
-	chmod +x lib/cli
+$(LIBS):
+	mkdir -p css
+	./node_modules/.bin/lessc less/marquee.less css/marquee.css
 
-$(LIBS): ./node_modules/.bin/coffee $(SRCS)
-	./node_modules/.bin/coffee --map --compile --output lib src
-
-./node_modules/.bin/bower ./node_modules/.bin/lessc:
+./node_modules/.bin/lessc:
 	npm install

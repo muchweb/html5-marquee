@@ -8,8 +8,5 @@
   "ignore": [
     "node_modules",
     "bower_components"
-  ],
-  "devDependencies": {
-    "lesshat": "~3.0.2"
-  }
+  ]
 }
