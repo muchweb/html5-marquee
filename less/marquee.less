@@ -1,35 +1,21 @@
 .marquee {
-
-	&.marquee-demo {
-		margin: 32px auto;
-		border: 1px solid black;
-		width: 120px;
-		&:before {
-			border: 1px solid green;
-		}
-	}
-
-	@keyframes moving {
-		from {
-			transform: translateX(0%);
-			left: 100%;
-		}
-		to {
-			transform: translateX(-100%);
-			left: 0%;
-		}
-	}
+	@import 'marquee-durations';
+	@import 'marquee-movements';
+	@import 'marquee-direction';
 
 	overflow: hidden;
-	
+
 	&:before {
 		content: attr(data-marquee);
-		background: yellow;
 		white-space: nowrap;
 		position: relative;
 		transform: translateX(-50%);
 		display: inline-block;
 		left: 50%;
-		animation: moving 5s linear infinite;
+		animation: linear infinite;
 	}
+
+	.marquee-speed-normal;
+	.marquee-movement-smooth;
+	.marquee-direction-normal;
 }
