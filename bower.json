@@ -14,5 +14,6 @@
   "keywords": [
     "html5",
     "marquee"
-  ]
+  ],
+  "main": "css/marquee.css"
 }
