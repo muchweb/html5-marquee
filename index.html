@@ -27,10 +27,14 @@
 			}
 			h1 {
 				padding: 0;
-				margin: 0;
+				margin: 0 auto;
 				display: inline-block;
-				border: 1px solid black;
-				width: 400px;
+				box-shadow: 1px 1px 4px 0 black inset;
+				background: rgba(0, 0, 0, 0.05);
+				/*border: 1px solid black;*/
+				/*width: 400px;*/
+				width: 80%;
+				display: block;
 				font-size: 40px;
 			}
 			h1:before {
@@ -96,7 +100,7 @@
 	</head>
 	<body>
 		<header>
-			<h1 class="marquee" data-marquee="HTML5 marquee"></h1>
+			<h1 class="marquee marquee-direction-alternate" data-marquee="HTML5 marquee"></h1>
 		</header>
 		<section>
 			<h2>Any text length</h2>
