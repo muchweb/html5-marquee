@@ -2,6 +2,7 @@
 	<head>
 		<title>HTML5 Marquee</title>
 		<link rel="stylesheet" title="switch" href="marquee.css">
+		<meta charset="utf-8">
 		<style media="screen">
 			.marquee.marquee-demo {
 				margin: 8px auto;
@@ -16,6 +17,8 @@
 			}
 			body {
 				margin: 0px;
+				font-family: sans-serif;
+				font-size: 13px;
 			}
 			header {
 				background: #f1c206;
@@ -23,9 +26,15 @@
 				text-align: center;
 			}
 			h1 {
+				padding: 0;
+				margin: 0;
 				display: inline-block;
 				border: 1px solid black;
 				width: 400px;
+				font-size: 40px;
+			}
+			h1:before {
+				animation-duration: 4s !important;
 			}
 			section {
 				background: #80db3d;
@@ -45,12 +54,29 @@
 				white-space: nowrap;
 				padding: 12px;
 			}
+			.examples > .example > .text {
+				display: inline-block;
+				width: 10%;
+				vertical-align: top;
+				margin: 8px auto;
+				text-align: center;
+				font-weight: bold;
+				text-transform: capitalize;
+				border-right: 1px solid rgba(0, 0, 0, 0.1);
+				display: none;
+
+				&:after {
+					content: ':';
+				}
+			}
 			.examples > .example > .demo {
 				display: inline-block;
 				width: 30%;
 				/**/
 				vertical-align: top;
+				font-family: monospace;
 			}
+
 			.examples > .example > .code {
 				border: 1px solid green;
 				display: inline-block;
@@ -60,6 +86,11 @@
 				background: rgba(0, 0, 0, .05);
 				white-space: normal;
 				vertical-align: top;
+				font-family: monospace;
+			}
+
+			.examples > .example > .code > strong {
+				background: rgba(255, 255, 255, 0.2);
 			}
 		</style>
 	</head>
@@ -71,35 +102,51 @@
 			<h2>Any text length</h2>
 			<div class="examples">
 				<div class="example">
+					<div class="text"></div>
 					<div class="demo">
 						<div class="marquee marquee-demo" data-marquee="Tiny text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee&quot; <strong>data-marquee=&quot;Tiny text</strong>&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;<strong>data-marquee=&quot;Tiny text</strong>&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text"></div>
 					<div class="demo">
 						<div class="marquee marquee-demo" data-marquee="Short text short text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee&quot; <strong>data-marquee=&quot;Short text short text</strong>&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;<strong>data-marquee=&quot;Short text short text</strong>&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text"></div>
 					<div class="demo">
-						<div class="marquee marquee-demo" data-marquee="Medium text medium text medium text medium text"></div>
+						<div class="marquee marquee-demo" data-marquee="Medium text medium text medium text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee&quot; <strong>data-marquee=&quot;Medium text medium text medium text medium text</strong>&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;<strong>data-marquee=&quot;Medium text medium text medium text</strong>&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text"></div>
 					<div class="demo">
 						<div class="marquee marquee-demo" data-marquee="Large text large text large text large text large text large text large text large text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee&quot; <strong>data-marquee=&quot;Large text large text large text large text large text large text large text large text</strong>&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;<strong>data-marquee=&quot;Large text large text large text large text large text large text large text large text</strong>&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 			</div>
@@ -108,51 +155,75 @@
 			<h2>Speed Adjustment</h2>
 			<div class="examples">
 				<div class="example">
+					<div class="text">drowsy</div>
 					<div class="demo">
-						<div class="marquee marquee-demo marquee-speed-drowsy" data-marquee="Medium text medium text medium text medium text"></div>
+						<div class="marquee marquee-demo marquee-speed-drowsy" data-marquee="Medium text medium text medium text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo <strong>marquee-speed-drowsy</strong>&quot; data-marquee=&quot;Medium text medium text medium text medium text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-speed-drowsy</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Medium text medium text medium text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text">slow</div>
 					<div class="demo">
-						<div class="marquee marquee-demo marquee-speed-slow" data-marquee="Medium text medium text medium text medium text"></div>
+						<div class="marquee marquee-demo marquee-speed-slow" data-marquee="Medium text medium text medium text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo <strong>marquee-speed-slow</strong>&quot; data-marquee=&quot;Medium text medium text medium text medium text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-speed-slow</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Medium text medium text medium text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text">normal</div>
 					<div class="demo">
-						<div class="marquee marquee-demo marquee-speed-normal" data-marquee="Medium text medium text medium text medium text"></div>
+						<div class="marquee marquee-demo marquee-speed-normal" data-marquee="Medium text medium text medium text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo <strong>marquee-speed-normal</strong>&quot; data-marquee=&quot;Medium text medium text medium text medium text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-speed-normal</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Medium text medium text medium text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text">fast</div>
 					<div class="demo">
-						<div class="marquee marquee-demo marquee-speed-fast" data-marquee="Medium text medium text medium text medium text"></div>
+						<div class="marquee marquee-demo marquee-speed-fast" data-marquee="Medium text medium text medium text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo <strong>marquee-speed-fast</strong>&quot; data-marquee=&quot;Medium text medium text medium text medium text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-speed-fast</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Medium text medium text medium text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text">swift</div>
 					<div class="demo">
-						<div class="marquee marquee-demo marquee-speed-swift" data-marquee="Medium text medium text medium text medium text"></div>
+						<div class="marquee marquee-demo marquee-speed-swift" data-marquee="Medium text medium text medium text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo <strong>marquee-speed-swift</strong>&quot; data-marquee=&quot;Medium text medium text medium text medium text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-speed-swift</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Medium text medium text medium text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text">hyper</div>
 					<div class="demo">
-						<div class="marquee marquee-demo marquee-speed-hyper" data-marquee="Medium text medium text medium text medium text"></div>
+						<div class="marquee marquee-demo marquee-speed-hyper" data-marquee="Medium text medium text medium text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo <strong>marquee-speed-hyper</strong>&quot; data-marquee=&quot;Medium text medium text medium text medium text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-speed-hyper</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Medium text medium text medium text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 			</div>
@@ -161,27 +232,39 @@
 			<h2>Direction</h2>
 			<div class="examples">
 				<div class="example">
+					<div class="text">right → left</div>
 					<div class="demo">
-						<div class="marquee marquee-demo marquee-direction-left" data-marquee="Medium text medium text medium text medium text"></div>
+						<div class="marquee marquee-demo marquee-direction-left" data-marquee="Medium text medium text medium text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo <strong>marquee-direction-left</strong>&quot; data-marquee=&quot;Medium text medium text medium text medium text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-direction-left</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Medium text medium text medium text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text">left → right</div>
 					<div class="demo">
-						<div class="marquee marquee-demo marquee-direction-right" data-marquee="Medium text medium text medium text medium text"></div>
+						<div class="marquee marquee-demo marquee-direction-right" data-marquee="Medium text medium text medium text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo <strong>marquee-direction-right</strong>&quot; data-marquee=&quot;Medium text medium text medium text medium text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-direction-right</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Medium text medium text medium text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text">alternate</div>
 					<div class="demo">
-						<div class="marquee marquee-demo marquee-direction-alternate marquee-speed-swift" data-marquee="Text"></div>
+						<div class="marquee marquee-demo marquee-direction-alternate marquee-speed-hyper" data-marquee="Text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo <strong>marquee-direction-alternate</strong> marquee-speed-swift&quot; data-marquee=&quot;Text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-direction-alternate</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 			</div>
@@ -190,19 +273,27 @@
 			<h2>Vintage movement</h2>
 			<div class="examples">
 				<div class="example">
+					<div class="text"></div>
 					<div class="demo">
 						<div class="marquee marquee-demo marquee-speed-hyper marquee-movement-steps20" data-marquee="Text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo marquee-speed-hyper <strong>marquee-movement-steps20</strong>&quot; data-marquee=&quot;Text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-movement-steps20</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 				<div class="example">
+					<div class="text"></div>
 					<div class="demo">
 						<div class="marquee marquee-demo marquee-speed-hyper marquee-movement-steps10" data-marquee="Text"></div>
 					</div>
 					<div class="code">
-						&lt;div class=&quot;marquee marquee-demo marquee-speed-hyper <strong>marquee-movement-steps10</strong>&quot; data-marquee=&quot;Text&quot;&gt;&lt;/div&gt;
+						&lt;div<br />
+						&emsp;&emsp;&emsp;&emsp;class=&quot;marquee <strong>marquee-movement-steps10</strong>&quot;<br />
+						&emsp;&emsp;&emsp;&emsp;data-marquee=&quot;Text&quot;<br />
+						&gt;&lt;/div&gt;
 					</div>
 				</div>
 			</div>
