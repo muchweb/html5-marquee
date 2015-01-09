@@ -1,7 +1,8 @@
 <html>
 	<head>
 		<title>HTML5 Marquee</title>
-		<link rel="stylesheet" title="switch" href="marquee.css">
+		<link rel="stylesheet" href="css/marquee.css">
+		<link rel="stylesheet" href="css/open-sans.css">
 		<meta charset="utf-8">
 		<style media="screen">
 			.marquee.marquee-demo {
@@ -21,27 +22,35 @@
 				font-size: 13px;
 			}
 			header {
-				background: #f1c206;
-				padding: 32px 0;
-				text-align: center;
+				background: #ffb600;
+				background: linear-gradient(to bottom, #ffb600 0%, #ff9707 100%);
+				padding: 128px 0;
 			}
 			h1 {
-				padding: 0;
+				padding: 16px;
 				margin: 0 auto;
 				display: inline-block;
-				box-shadow: 1px 1px 4px 0 black inset;
-				background: rgba(0, 0, 0, 0.05);
-				/*border: 1px solid black;*/
-				/*width: 400px;*/
-				width: 80%;
+				box-shadow: 1px 1px 4px 0 black;
+				width: 70%;
 				display: block;
 				font-size: 40px;
+				font-family: 'Open Sans';
+				font-weight: bold;
+				font-style: normal;
+				background: rgba(255, 255, 255, 0.1);
 			}
 			h1:before {
+				padding: 0;
+				margin: 0;
 				animation-duration: 4s !important;
+				color: #3A2300;
+				text-shadow: 1px 1px 2px #FFDE9E;
 			}
 			section {
+				padding-bottom: 32px;
+				padding-top: 32px;
 				background: #80db3d;
+				box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1) inset;
 			}
 			h2 {
 				text-align: center;
@@ -96,14 +105,36 @@
 			.examples > .example > .code > strong {
 				background: rgba(255, 255, 255, 0.2);
 			}
+
+			nav {
+				display: block;
+				background: linear-gradient(to bottom, #ffb600 0%, #ff9707 100%);
+				text-align: center;
+				border-top: 1px solid rgba(0, 0, 0, 0.2);
+			}
+
+			nav > a {
+				display: inline-block;
+				padding: 10px 10px;
+				margin: 0;
+				color: black;
+				/*text-decoration: none;*/
+				text-shadow: 1px 1px 2px #FFDE9E;
+			}
 		</style>
 	</head>
 	<body>
 		<header>
 			<h1 class="marquee marquee-direction-alternate" data-marquee="HTML5 marquee"></h1>
 		</header>
+		<nav>
+			<a href="#1">Any text length</a>
+			<a href="#2">Speed Adjustment</a>
+			<a href="#3">Direction</a>
+			<a href="#4">Vintage movement</a>
+		</nav>
 		<section>
-			<h2>Any text length</h2>
+			<h2 id="1">Any text length</h2>
 			<div class="examples">
 				<div class="example">
 					<div class="text"></div>
@@ -156,7 +187,7 @@
 			</div>
 		</section>
 		<section>
-			<h2>Speed Adjustment</h2>
+			<h2 id="2">Speed Adjustment</h2>
 			<div class="examples">
 				<div class="example">
 					<div class="text">drowsy</div>
@@ -233,7 +264,7 @@
 			</div>
 		</section>
 		<section>
-			<h2>Direction</h2>
+			<h2 id="3">Direction</h2>
 			<div class="examples">
 				<div class="example">
 					<div class="text">right → left</div>
@@ -274,7 +305,7 @@
 			</div>
 		</section>
 		<section>
-			<h2>Vintage movement</h2>
+			<h2 id="4">Vintage movement</h2>
 			<div class="examples">
 				<div class="example">
 					<div class="text"></div>
