@@ -6,6 +6,7 @@
   "license": "GPL-3.0+",
   "author": "muchweb <aleks@s-ko.net>",
   "devDependencies": {
+    "autoprefixer": "^4.0.0",
     "less": "^2.2.0"
   },
   "keywords": [
