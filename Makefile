@@ -1,12 +1,14 @@
-all: css/marquee.css css/open-sans.css css/style.css
+all: css/marquee.css css/open-sans.css css/style.css logo/logo.png
 
-logo.png: bower_components/html5-marquee/logo.png
-	cp bower_components/html5-marquee/logo.png logo.png
+logo/logo.png: bower_components/html5-marquee
+	cp bower_components/html5-marquee/logo/logo.png logo/logo.png
 
-css/marquee.css: ./node_modules/.bin/bower
+css/marquee.css: bower_components/html5-marquee
 	mkdir -p css
-	./node_modules/.bin/bower install git@github.com:muchweb/html5-marquee.git
 	cp bower_components/html5-marquee/css/marquee.css css/marquee.css
+
+bower_components/html5-marquee: ./node_modules/.bin/bower
+	./node_modules/.bin/bower install git@github.com:muchweb/html5-marquee.git
 
 css/open-sans.css: ./node_modules/.bin/bower
 	mkdir -p css
@@ -21,4 +23,6 @@ css/style.css: ./node_modules/.bin/lessc
 	npm install bower less
 
 clean:
-	rm -r node_modules bower_components
+	rm -f npm-debug.log
+	rm -rf node_modules
+	rm -rf bower_components
