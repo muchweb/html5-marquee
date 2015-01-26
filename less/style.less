@@ -1,0 +1,141 @@
+.marquee.marquee-demo {
+	margin: 8px auto;
+	border: 1px solid black;
+	width: 120px;
+	background: rgba(255, 255, 255, .1);
+
+	&:before {
+		background: yellow;
+	}
+}
+body {
+	margin: 0px;
+	font-family: sans-serif;
+	font-size: 13px;
+}
+header {
+	background: #ffb600;
+	background: linear-gradient(to bottom, #ffb600 0%, #ff9707 100%);
+	padding: 64px 0 64px 0;
+	& > .logo {
+		padding: 32px;
+		text-align: center;
+	}
+	& > .download {
+		margin: 32px auto;
+		width: 800px;
+		display: flex;
+		& > div {
+			margin: 12px;
+			flex: 1;
+			text-align: center;
+			& > h3 {
+				text-align: center;
+				margin-bottom: 24px;
+			}
+			& > a {
+				padding: 12px 4px;
+				background: linear-gradient(to bottom, #13c618 0%, #269d29 100%);
+				font-weight: bold;
+				color: white;
+				text-decoration: none;
+				border: 1px solid black;
+				& > svg {
+					vertical-align: middle;
+				}
+			}
+			& > code {
+				display: block;
+				box-shadow: -1px -1px 3px 0 black inset;
+				background: rgba(255, 255, 255, 0.1);
+				text-align: center;
+				padding: 8px;
+				margin: 0px;
+			}
+		}
+	}
+}
+h1 {
+	padding: 16px;
+	margin: 0 auto;
+	display: inline-block;
+	box-shadow: 1px 1px 4px 0 black;
+	width: 70%;
+	display: block;
+	font-size: 40px;
+	font-family: 'Open Sans';
+	font-weight: bold;
+	font-style: normal;
+	background: rgba(255, 255, 255, 0.1);
+}
+h1:before {
+	padding: 0;
+	margin: 0;
+	animation-duration: 4s !important;
+	color: #3A2300;
+	text-shadow: 1px 1px 2px #FFDE9E;
+}
+section {
+	padding-bottom: 32px;
+	padding-top: 32px;
+	background: #80db3d;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1) inset;
+}
+h2 {
+	text-align: center;
+	padding: 12px;
+	margin: 0;
+}
+.examples {
+	width: 800px;
+	margin: 0 auto;
+	& > .example {
+		text-align: left;
+		white-space: nowrap;
+		padding: 12px;
+		& > .text {
+			display: inline-block;
+			width: 10%;
+			vertical-align: top;
+			margin: 8px auto;
+			text-align: center;
+			font-weight: bold;
+			text-transform: capitalize;
+			border-right: 1px solid rgba(0, 0, 0, 0.1);
+			display: none;
+		}
+		& > .demo {
+			display: inline-block;
+			width: 30%;
+			vertical-align: top;
+			font-family: monospace;
+		}
+		& > .code {
+			border: 1px solid green;
+			display: inline-block;
+			box-sizing: border-box;
+			padding: 16px;
+			width: 69%;
+			background: rgba(0, 0, 0, .05);
+			white-space: normal;
+			vertical-align: top;
+			font-family: monospace;
+			& > strong {
+				background: rgba(255, 255, 255, 0.2);
+			}
+		}
+	}
+}
+nav {
+	display: block;
+	background: linear-gradient(to bottom, #ffb600 0%, #ff9707 100%);
+	text-align: center;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	& > a {
+		display: inline-block;
+		padding:2 10px 10px;
+		margin: 0;
+		color: black;
+		text-shadow: 1px 1px 2px #FFDE9E;
+	}
+}

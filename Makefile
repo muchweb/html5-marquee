@@ -1,4 +1,4 @@
-all: css/marquee.css css/open-sans.css
+all: css/marquee.css css/open-sans.css css/style.css
 
 logo.png: bower_components/html5-marquee/logo.png
 	cp bower_components/html5-marquee/logo.png logo.png
@@ -14,8 +14,11 @@ css/open-sans.css: ./node_modules/.bin/bower
 	cp bower_components/open-sans/css/open-sans.css css
 	cp -r bower_components/open-sans/fonts .
 
-./node_modules/.bin/bower:
-	npm install bower
+css/style.css: ./node_modules/.bin/lessc
+	./node_modules/.bin/lessc less/style.less > css/style.css
+
+./node_modules/.bin/bower ./node_modules/.bin/lessc:
+	npm install bower less
 
 clean:
 	rm -r node_modules bower_components

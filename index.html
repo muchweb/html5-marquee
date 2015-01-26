@@ -1,161 +1,10 @@
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>HTML5 Marquee</title>
 		<link rel="stylesheet" href="css/marquee.css">
 		<link rel="stylesheet" href="css/open-sans.css">
-		<meta charset="utf-8">
-		<style media="screen">
-			.marquee.marquee-demo {
-				margin: 8px auto;
-				border: 1px solid black;
-				width: 120px;
-				background: rgba(255, 255, 255, .1);
-			}
-			.marquee.marquee-demo:before {
-				/*border-left: 1px solid black;*/
-				/*border-right: 1px solid black;*/
-				background: yellow;
-			}
-			body {
-				margin: 0px;
-				font-family: sans-serif;
-				font-size: 13px;
-			}
-			header {
-				background: #ffb600;
-				background: linear-gradient(to bottom, #ffb600 0%, #ff9707 100%);
-				padding: 64px 0 64px 0;
-			}
-			header > .logo {
-				padding: 32px;
-				text-align: center;
-			}
-			header > .download {
-				margin: 32px auto;
-				width: 800px;
-				display: flex;
-			}
-			header > .download > div {
-				margin: 12px;
-				flex: 1;
-				text-align: center;
-			}
-			header > .download > div > h3 {
-				text-align: center;
-				margin-bottom: 24px;
-			}
-			header > .download > div > a {
-				padding: 12px 4px;
-				background: linear-gradient(to bottom, #13c618 0%, #269d29 100%);
-				font-weight: bold;
-				color: white;
-				text-decoration: none;
-				border: 1px solid black;
-			}
-			header > .download > div > code {
-				display: block;
-				box-shadow: -1px -1px 3px 0 black inset;
-				background: rgba(255, 255, 255, 0.1);
-				text-align: center;
-				padding: 8px;
-				margin: 0px;
-			}
-			h1 {
-				padding: 16px;
-				margin: 0 auto;
-				display: inline-block;
-				box-shadow: 1px 1px 4px 0 black;
-				width: 70%;
-				display: block;
-				font-size: 40px;
-				font-family: 'Open Sans';
-				font-weight: bold;
-				font-style: normal;
-				background: rgba(255, 255, 255, 0.1);
-			}
-			h1:before {
-				padding: 0;
-				margin: 0;
-				animation-duration: 4s !important;
-				color: #3A2300;
-				text-shadow: 1px 1px 2px #FFDE9E;
-			}
-			section {
-				padding-bottom: 32px;
-				padding-top: 32px;
-				background: #80db3d;
-				box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1) inset;
-			}
-			h2 {
-				text-align: center;
-				padding: 12px;
-				margin: 0;
-			}
-			.examples {
-				width: 800px;
-				margin: 0 auto;
-			}
-			.examples > .example {
-				/*border: 1px solid black;*/
-				text-align: left;
-				white-space: nowrap;
-				padding: 12px;
-			}
-			.examples > .example > .text {
-				display: inline-block;
-				width: 10%;
-				vertical-align: top;
-				margin: 8px auto;
-				text-align: center;
-				font-weight: bold;
-				text-transform: capitalize;
-				border-right: 1px solid rgba(0, 0, 0, 0.1);
-				display: none;
-
-				&:after {
-					content: ':';
-				}
-			}
-			.examples > .example > .demo {
-				display: inline-block;
-				width: 30%;
-				/**/
-				vertical-align: top;
-				font-family: monospace;
-			}
-
-			.examples > .example > .code {
-				border: 1px solid green;
-				display: inline-block;
-				box-sizing: border-box;
-				padding: 16px;
-				width: 69%;
-				background: rgba(0, 0, 0, .05);
-				white-space: normal;
-				vertical-align: top;
-				font-family: monospace;
-			}
-
-			.examples > .example > .code > strong {
-				background: rgba(255, 255, 255, 0.2);
-			}
-
-			nav {
-				display: block;
-				background: linear-gradient(to bottom, #ffb600 0%, #ff9707 100%);
-				text-align: center;
-				border-top: 1px solid rgba(0, 0, 0, 0.2);
-			}
-
-			nav > a {
-				display: inline-block;
-				padding:2 10px 10px;
-				margin: 0;
-				color: black;
-				/*text-decoration: none;*/
-				text-shadow: 1px 1px 2px #FFDE9E;
-			}
-		</style>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header>
@@ -165,7 +14,7 @@
 			<div class="download">
 				<div>
 					<h3>Github</h3>
-					<a href="https://github.com/muchweb/html5-marquee">Download source</a>
+					<a href="https://github.com/muchweb/html5-marquee"><svg viewBox="0 0 16 16" width="16"><path fill="#fff" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg> Get source</a>
 				</div>
 				<div>
 					<h3>BOWER</h3>
