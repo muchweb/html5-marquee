@@ -1,4 +1,4 @@
-# HTML5 MARQUEE
+# HTML5 MARQUEE [![npm version](https://badge.fury.io/js/html5-marquee.svg)](http://badge.fury.io/js/html5-marquee)
 
 <p align="center"><img alt="HTML5 marquee logo" src="logo/logo.png" /></p>
 
