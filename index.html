@@ -24,7 +24,41 @@
 			header {
 				background: #ffb600;
 				background: linear-gradient(to bottom, #ffb600 0%, #ff9707 100%);
-				padding: 128px 0;
+				padding: 64px 0 64px 0;
+			}
+			header > .logo {
+				padding: 32px;
+				text-align: center;
+			}
+			header > .download {
+				margin: 32px auto;
+				width: 800px;
+				display: flex;
+			}
+			header > .download > div {
+				margin: 12px;
+				flex: 1;
+				text-align: center;
+			}
+			header > .download > div > h3 {
+				text-align: center;
+				margin-bottom: 24px;
+			}
+			header > .download > div > a {
+				padding: 12px 4px;
+				background: linear-gradient(to bottom, #13c618 0%, #269d29 100%);
+				font-weight: bold;
+				color: white;
+				text-decoration: none;
+				border: 1px solid black;
+			}
+			header > .download > div > code {
+				display: block;
+				box-shadow: -1px -1px 3px 0 black inset;
+				background: rgba(255, 255, 255, 0.1);
+				text-align: center;
+				padding: 8px;
+				margin: 0px;
 			}
 			h1 {
 				padding: 16px;
@@ -115,7 +149,7 @@
 
 			nav > a {
 				display: inline-block;
-				padding: 10px 10px;
+				padding:2 10px 10px;
 				margin: 0;
 				color: black;
 				/*text-decoration: none;*/
@@ -125,7 +159,23 @@
 	</head>
 	<body>
 		<header>
+			<div class="logo"><img src="logo/logo.png" /></div>
 			<h1 class="marquee marquee-direction-alternate" data-marquee="HTML5 marquee"></h1>
+			<a href="https://github.com/muchweb/html5-marquee"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+			<div class="download">
+				<div>
+					<h3>Github</h3>
+					<a href="https://github.com/muchweb/html5-marquee">Download source</a>
+				</div>
+				<div>
+					<h3>BOWER</h3>
+					<code>bower install html5-marquee</code>
+				</div>
+				<div>
+					<h3>NPM</h3>
+					<code>npm install html5-marquee</code>
+				</div>
+			</div>
 		</header>
 		<nav>
 			<a href="#1">Any text length</a>
