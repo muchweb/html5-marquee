@@ -6,6 +6,21 @@
 
 This is a (deprecated) `<marquee></marquee>` tag implementation in HTML5 using pure CSS3 animations. Please see [**live demo here**](http://muchweb.github.io/html5-marquee/).
 
+## Installation
+
+### Bower
+```bash
+bower install html5-marquee
+```
+
+### NPM
+```bash
+npm install html5-marquee
+```
+### From source
+
+See [building](#building) section.
+
 ## Usage
 
 ### Simple usage:
