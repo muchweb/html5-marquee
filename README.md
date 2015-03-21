@@ -43,6 +43,9 @@ See [building](#building) section.
 #### Custom speed:
 
 Inherits the speed from the class or inline style
+
+|CSS Class|Delay|
+|:---:|:---:|
 |`.marquee-speed-custom`|`inherit`|
 
 ### Adjust direction:
