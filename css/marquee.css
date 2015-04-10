@@ -9,6 +9,10 @@
   -webkit-animation-duration: 20s;
           animation-duration: 20s;
 }
+.marquee.marquee-speed-custom:before {
+  -webkit-animation-duration: inherit;
+          animation-duration: inherit;
+}
 .marquee.marquee-speed-normal:before {
   -webkit-animation-duration: 10s;
           animation-duration: 10s;

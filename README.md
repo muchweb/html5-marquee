@@ -40,6 +40,14 @@ See [building](#building) section.
 |`.marquee-speed-swift`|`5s`|
 |`.marquee-speed-hyper`|`2s`|
 
+#### Custom speed:
+
+Inherits the speed from the class or inline style
+
+|CSS Class|Delay|
+|:---:|:---:|
+|`.marquee-speed-custom`|`inherit`|
+
 ### Adjust direction:
 
 |CSS Class||
