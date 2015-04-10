@@ -3,6 +3,7 @@
   "description": "HTML5 marquee tag implementation in pure CSS3",
   "version": "0.1.1",
   "repository": "https://github.com/muchweb/html5-marquee",
+  "homepage": "http://html5marquee.com/",
   "license": "GPL-3.0+",
   "author": "muchweb <aleks@s-ko.net>",
   "devDependencies": {
