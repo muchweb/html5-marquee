@@ -595,14 +595,6 @@
   -webkit-animation-name: movement-smooth;
           animation-name: movement-smooth;
 }
-.marquee.marquee-movement-smooth .data-marquee {
-  -webkit-animation-name: movement-smooth;
-          animation-name: movement-smooth;
-}
-.marquee.marquee-movement-smooth:before {
-  -webkit-animation-name: movement-smooth;
-          animation-name: movement-smooth;
-}
 .marquee.marquee-movement-smooth-down .data-marquee {
   -webkit-animation-name: movement-smooth-down;
           animation-name: movement-smooth-down;
@@ -702,14 +694,6 @@
 .marquee:before {
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-}
-.marquee .data-marquee {
-  -webkit-animation-name: movement-smooth;
-          animation-name: movement-smooth;
-}
-.marquee:before {
-  -webkit-animation-name: movement-smooth;
-          animation-name: movement-smooth;
 }
 .marquee .data-marquee {
   -webkit-animation-name: movement-smooth;

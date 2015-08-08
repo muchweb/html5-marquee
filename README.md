@@ -29,6 +29,18 @@ See [building](#building) section.
 <div class="marquee" data-marquee="Text contents"></div>
 ```
 
+### Use Html as marquee (For example add images)
+
+```html
+<div class="marquee">
+	<div class="data-marquee">
+		<div>Text contents</div>
+		<div><img src="http://placehold.it/350x150" /></div>
+		<div>Text contents</div>
+	</div>
+</div>
+```
+
 ### Adjust speed:
 
 |CSS Class|Delay|
@@ -48,13 +60,6 @@ Inherits the speed from the class or inline style
 |:---:|:---:|
 |`.marquee-speed-custom`|`inherit`|
 
-### Adjust direction:
-
-|CSS Class||
-|:---:|:---:|
-|`.marquee-direction-left`|Right to left (default)|
-|`.marquee-direction-right`|Left to right|
-|`.marquee-direction-alternate`|Alternate movement|
 
 ### Adjust direction:
 
@@ -63,6 +68,8 @@ Inherits the speed from the class or inline style
 |`.marquee-direction-left`|Right to left (default)|
 |`.marquee-direction-right`|Left to right|
 |`.marquee-direction-alternate`|Alternate movement|
+|`.marquee-movement-smooth-down`|Up to Down|
+|`.marquee-movement-smooth-up`|Down to Up|
 
 ### Vintage effect:
 
