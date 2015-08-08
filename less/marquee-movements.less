@@ -9,6 +9,28 @@
 	}
 }
 
+@keyframes movement-smooth-down {
+	from {
+		transform: translateY(-100%);
+		top: 100%;
+	}
+	to {
+		transform: translateY(100%);
+		top: 0%;
+	}
+}
+
+@keyframes movement-smooth-up {
+	from {
+		transform: translateY(100%);
+		top: 0%;
+	}
+	to {
+		transform: translateY(-100%);
+		top: 100%;
+	}
+}
+
 @keyframes movement-steps20 {
 	0% {
 		transform: translateX(0%);
@@ -204,24 +226,70 @@
 }
 
 &.marquee-movement-smooth {
+	.data-marquee {
+		animation-name: movement-smooth;
+	}
+
 	&:before {
 		animation-name: movement-smooth;
 	}
 }
 
+&.marquee-movement-smooth {
+	.data-marquee {
+		animation-name: movement-smooth;
+	}
+
+	&:before {
+		animation-name: movement-smooth;
+	}
+}
+
+&.marquee-movement-smooth-down {
+	.data-marquee {
+		animation-name: movement-smooth-down;
+	}
+
+	&:before {
+		animation-name: movement-smooth-down;
+	}
+}
+
+&.marquee-movement-smooth-up {
+	.data-marquee {
+		animation-name: movement-smooth-up;
+	}
+
+	&:before {
+		animation-name: movement-smooth-up;
+	}
+}
+
 &.marquee-movement-steps20 {
+	.data-marquee {
+		animation-name: movement-steps20;
+	}
+
 	&:before {
 		animation-name: movement-steps20;
 	}
 }
 
 &.marquee-movement-steps10 {
+	.data-marquee {
+		animation-name: movement-steps10;
+	}
+
 	&:before {
 		animation-name: movement-steps10;
 	}
 }
 
 &.marquee-movement-steps5 {
+	.data-marquee {
+		animation-name: movement-steps5;
+	}
+	
 	&:before {
 		animation-name: movement-steps5;
 	}

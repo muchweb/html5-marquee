@@ -1,29 +1,57 @@
 .marquee {
   overflow: hidden;
 }
+.marquee.marquee-speed-drowsy .data-marquee {
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
 .marquee.marquee-speed-drowsy:before {
   -webkit-animation-duration: 30s;
           animation-duration: 30s;
+}
+.marquee.marquee-speed-slow .data-marquee {
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
 }
 .marquee.marquee-speed-slow:before {
   -webkit-animation-duration: 20s;
           animation-duration: 20s;
 }
+.marquee.marquee-speed-custom .data-marquee {
+  -webkit-animation-duration: inherit;
+          animation-duration: inherit;
+}
 .marquee.marquee-speed-custom:before {
   -webkit-animation-duration: inherit;
           animation-duration: inherit;
+}
+.marquee.marquee-speed-normal .data-marquee {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
 }
 .marquee.marquee-speed-normal:before {
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
 }
+.marquee.marquee-speed-fast .data-marquee {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
 .marquee.marquee-speed-fast:before {
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
 }
+.marquee.marquee-speed-swift .data-marquee {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
 .marquee.marquee-speed-swift:before {
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+}
+.marquee.marquee-speed-hyper .data-marquee {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .marquee.marquee-speed-hyper:before {
   -webkit-animation-duration: 2s;
@@ -51,6 +79,54 @@
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     left: 0%;
+  }
+}
+@-webkit-keyframes movement-smooth-down {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    top: 100%;
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    top: 0%;
+  }
+}
+@keyframes movement-smooth-down {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    top: 100%;
+  }
+  to {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    top: 0%;
+  }
+}
+@-webkit-keyframes movement-smooth-up {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    top: 0%;
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    top: 100%;
+  }
+}
+@keyframes movement-smooth-up {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    top: 0%;
+  }
+  to {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    top: 100%;
   }
 }
 @-webkit-keyframes movement-steps20 {
@@ -511,30 +587,84 @@
     left: 0%;
   }
 }
+.marquee.marquee-movement-smooth .data-marquee {
+  -webkit-animation-name: movement-smooth;
+          animation-name: movement-smooth;
+}
 .marquee.marquee-movement-smooth:before {
   -webkit-animation-name: movement-smooth;
           animation-name: movement-smooth;
+}
+.marquee.marquee-movement-smooth .data-marquee {
+  -webkit-animation-name: movement-smooth;
+          animation-name: movement-smooth;
+}
+.marquee.marquee-movement-smooth:before {
+  -webkit-animation-name: movement-smooth;
+          animation-name: movement-smooth;
+}
+.marquee.marquee-movement-smooth-down .data-marquee {
+  -webkit-animation-name: movement-smooth-down;
+          animation-name: movement-smooth-down;
+}
+.marquee.marquee-movement-smooth-down:before {
+  -webkit-animation-name: movement-smooth-down;
+          animation-name: movement-smooth-down;
+}
+.marquee.marquee-movement-smooth-up .data-marquee {
+  -webkit-animation-name: movement-smooth-up;
+          animation-name: movement-smooth-up;
+}
+.marquee.marquee-movement-smooth-up:before {
+  -webkit-animation-name: movement-smooth-up;
+          animation-name: movement-smooth-up;
+}
+.marquee.marquee-movement-steps20 .data-marquee {
+  -webkit-animation-name: movement-steps20;
+          animation-name: movement-steps20;
 }
 .marquee.marquee-movement-steps20:before {
   -webkit-animation-name: movement-steps20;
           animation-name: movement-steps20;
 }
+.marquee.marquee-movement-steps10 .data-marquee {
+  -webkit-animation-name: movement-steps10;
+          animation-name: movement-steps10;
+}
 .marquee.marquee-movement-steps10:before {
   -webkit-animation-name: movement-steps10;
           animation-name: movement-steps10;
 }
+.marquee.marquee-movement-steps5 .data-marquee {
+  -webkit-animation-name: movement-steps5;
+          animation-name: movement-steps5;
+}
 .marquee.marquee-movement-steps5:before {
   -webkit-animation-name: movement-steps5;
           animation-name: movement-steps5;
+}
+.marquee.marquee-direction-left .data-marquee,
+.marquee.marquee-direction-normal .data-marquee {
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
 }
 .marquee.marquee-direction-left:before,
 .marquee.marquee-direction-normal:before {
   -webkit-animation-direction: normal;
           animation-direction: normal;
 }
+.marquee.marquee-direction-alternate .data-marquee {
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
 .marquee.marquee-direction-alternate:before {
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
+}
+.marquee.marquee-direction-right .data-marquee,
+.marquee.marquee-direction-reverse .data-marquee {
+  -webkit-animation-direction: reverse;
+          animation-direction: reverse;
 }
 .marquee.marquee-direction-right:before,
 .marquee.marquee-direction-reverse:before {
@@ -552,14 +682,46 @@
   left: 50%;
   -webkit-animation: linear infinite;
           animation: linear infinite;
+  white-space: pre;
+}
+.marquee .data-marquee {
+  white-space: nowrap;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: inline-block;
+  left: 50%;
+  -webkit-animation: linear infinite;
+          animation: linear infinite;
+}
+.marquee .data-marquee {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
 }
 .marquee:before {
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
 }
+.marquee .data-marquee {
+  -webkit-animation-name: movement-smooth;
+          animation-name: movement-smooth;
+}
 .marquee:before {
   -webkit-animation-name: movement-smooth;
           animation-name: movement-smooth;
+}
+.marquee .data-marquee {
+  -webkit-animation-name: movement-smooth;
+          animation-name: movement-smooth;
+}
+.marquee:before {
+  -webkit-animation-name: movement-smooth;
+          animation-name: movement-smooth;
+}
+.marquee .data-marquee {
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
 }
 .marquee:before {
   -webkit-animation-direction: normal;
