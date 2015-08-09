@@ -679,11 +679,7 @@
 .marquee .data-marquee {
   white-space: nowrap;
   position: relative;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
   display: inline-block;
-  left: 50%;
   -webkit-animation: linear infinite;
           animation: linear infinite;
 }
