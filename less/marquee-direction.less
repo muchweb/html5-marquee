@@ -1,11 +1,19 @@
 &.marquee-direction-left,
 &.marquee-direction-normal {
+	.data-marquee {
+		animation-direction: normal;
+	}
+
 	&:before {
 		animation-direction: normal;
 	}
 }
 
 &.marquee-direction-alternate {
+	.data-marquee {
+		animation-direction: alternate;
+	}
+
 	&:before {
 		animation-direction: alternate;
 	}
@@ -13,6 +21,10 @@
 
 &.marquee-direction-right,
 &.marquee-direction-reverse {
+	.data-marquee {
+		animation-direction: reverse;
+	}
+	
 	&:before {
 		animation-direction: reverse;
 	}
