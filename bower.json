@@ -6,10 +6,11 @@
   ],
   "license": "GPL-3.0+",
   "ignore": [
-    "node_modules",
-    "bower_components"
+    "/node_modules",
+    "/bower_components",
+    "npm-debug.log"
   ],
-  "homepage": "https://github.com/muchweb/html5-marquee",
+  "homepage": "http://html5marquee.com/",
   "description": "HTML5 marquee tag implementation in pure CSS3",
   "keywords": [
     "html5",

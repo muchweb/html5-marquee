@@ -6,12 +6,13 @@
   "homepage": "http://html5marquee.com/",
   "license": "GPL-3.0+",
   "author": "muchweb <aleks@s-ko.net>",
-  "devDependencies": {
-    "autoprefixer": "^4.0.0",
-    "less": "^2.2.0"
-  },
   "keywords": [
     "html5",
     "marquee"
-  ]
+  ],
+  "devDependencies": {
+    "autoprefixer": "^6.1.1",
+    "less": "^2.5.3",
+    "postcss-cli": "^2.3.2"
+  }
 }
