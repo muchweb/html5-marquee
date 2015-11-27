@@ -8,18 +8,8 @@ This is a (deprecated) `<marquee></marquee>` tag implementation in HTML5 using p
 
 ## Installation
 
-### Bower
-```bash
-bower install html5-marquee
-```
-
-### NPM
-```bash
-npm install html5-marquee
-```
-### From source
-
-See [building](#building) section.
+- Bower: `bower install html5-marquee`
+- NPM: `npm install html5-marquee`
 
 ## Usage
 
@@ -29,7 +19,7 @@ See [building](#building) section.
 <div class="marquee" data-marquee="Text contents"></div>
 ```
 
-### Adjust speed:
+### Adjust marquee speed:
 
 |CSS Class|Delay|
 |:---:|:---:|
@@ -76,10 +66,9 @@ Inherits the speed from the class or inline style
 
 Requirements:
 
- - Nodejs
+ - Node.js
  - NPM
  - GNU Make
-
 
 ```bash
 make
